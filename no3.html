@@ -3,40 +3,78 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ask Her Out</title>
-
+    <title>Manja na!</title>
     <link rel="stylesheet" href="./style.css" />
+    <style>
+      /* Center the content */
+      .container {
+        text-align: center;
+        padding: 20px;
+      }
+
+      .giphy-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px; /* Space between Giphy and text */
+      }
+
+      .giphy-embed {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .btn {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+      }
+
+      .btn a {
+        text-decoration: none;
+        padding: 10px 20px;
+        background-color: #f39c12;
+        color: white;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+
+      .btn a:hover {
+        background-color: #e67e22;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
-      <div
-        class="tenor-gif-embed"
-        data-postid="15974530976611222074"
-        data-share-method="host"
-        data-aspect-ratio="1.26923"
-        data-width="100%"
-      >
-        <a
-          href="https://tenor.com/view/peach-goma-phone-gif-15974530976611222074"
-          >Peach Goma Phone Sticker</a
-        >from
-        <a href="https://tenor.com/search/peach+goma-stickers"
-          >Peach Goma Stickers</a
-        >
+      <!-- Giphy centered above the text -->
+      <div class="giphy-wrapper">
+        <div style="width:100%;height:0;padding-bottom:61%;position:relative;">
+          <iframe 
+            src="https://giphy.com/embed/8weF8YTaeyxpu" 
+            width="100%" 
+            height="100%" 
+            style="position:absolute" 
+            frameBorder="0" 
+            class="giphy-embed" 
+            allowFullScreen>
+          </iframe>
+        </div>
       </div>
-      <script
-        type="text/javascript"
-        async
-        src="https://tenor.com/embed.js"
-      ></script>
 
       <h1>Manja na! Kitna bhav khaegi 😭</h1>
+
       <div class="btn">
         <a href="yes.html">Yes</a>
         <a href="#" id="move-random">No</a>
       </div>
     </div>
 
+    <script
+      type="text/javascript"
+      async
+      src="https://tenor.com/embed.js"
+    ></script>
     <script src="./script.js"></script>
   </body>
 </html>
